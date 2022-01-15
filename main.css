@@ -3,6 +3,13 @@
 * {
     margin: 0px;
     padding: 0;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -38,10 +45,10 @@ header .logo_div h1 {
     font-family: 'Staatliches', cursive;
 }
 
-
 .header_btn {
     width: 50%;
     height: 10%;
+    
 }
 
 .header_btn ul {
@@ -114,6 +121,7 @@ button.booking_btn {
     background-color: #E02C6D;
     cursor: pointer;
     color: ghostwhite;
+    font-family: 'Poppins', sans-serif;
     animation: bg-animation 3s ease-in .3s infinite alternate-reverse;
     -webkit-animation: bg-animation 3s ease-in .3s infinite alternate-reverse;
 }
@@ -162,11 +170,6 @@ button.booking_btn:hover i{
     padding-left: .3%;
 }
 
-/* .companies hr {
-    border: none;
-    height: 3px;
-    background-color: #E1E7ED;
-} */
 .company_logos {
     display: flex;
     justify-content: center;
@@ -181,8 +184,10 @@ button.booking_btn:hover i{
         /*! Product Section  */
 
 .products_section {
+    margin-top: 1%;
     margin-left: 8%;
     margin-right: 8%;
+    /* background-color: ghostwhite; */
 }
 
 .product_container {
@@ -197,7 +202,7 @@ button.booking_btn:hover i{
     width: 329px;
     display: flex;
     flex-direction: column;
-    /* background-color: ghostwhite; */
+    border-color: white;
     border-radius: 20px 20px 0px 0px;
     -webkit-border-radius: 20px 20px 0px 0px;
     -moz-border-radius: 20px 20px 0px 0px;
@@ -210,18 +215,22 @@ button.booking_btn:hover i{
     -moz-transition: .5s;
     -ms-transition: .5s;
     -o-transition: .5s;
-    /* border: 2px solid; */
     box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
 }
 
-.all_products img {
-
-}
 
 .all_products h2, h3, h4, h5{
     padding: 5px;
 }
 
+.all_products img {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
 
 .all_products .stars i {
     color: #FB8200;
@@ -231,19 +240,15 @@ button.booking_btn:hover i{
     color: #F5A551;
 }
 
-.all_products h5 {
-    /* background-color: rgb(209, 180, 160); */
-    color: ghostwhite;
-}
 
 .all_products .cart_btn {
     border: none;
     height: 35px;
     width: 100%;
-    /* background-color: #FC5530; */
-    background-color: ghostwhite;
+    background-color: #fc5530d3;
+    font-family: 'Roboto', sans-serif;
     cursor: pointer;
-    font-weight: bolder;
+    font-weight: bold;
     transition: .3s;
     -webkit-transition: .3s;
     -moz-transition: .3s;
@@ -252,7 +257,7 @@ button.booking_btn:hover i{
 }
 
 .all_products .cart_btn:hover {
-    color: lightblue;
+    color: ghostwhite;
 }
 
 /* .all_products:hover {
@@ -308,6 +313,19 @@ button.booking_btn:hover i{
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
     cursor: pointer;
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: ghostwhite;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.sale_content > button.sale_btn:hover {
+    border: none;
+    background-color: rgb(224, 49, 49);
+    color: white;
 }
 
 /*! footer part  */
