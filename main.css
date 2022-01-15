@@ -18,7 +18,7 @@ body {
     color: ghostwhite;
 }
 
-        /*! header section  */
+                        /*! header section  */
 
 header {
     display: flex;
@@ -48,7 +48,6 @@ header .logo_div h1 {
 .header_btn {
     width: 50%;
     height: 10%;
-    
 }
 
 .header_btn ul {
@@ -89,11 +88,12 @@ header .logo_div h1 {
     border-bottom: 3px solid lightgreen;
 }
 
-.header_btn ul > li:nth-child(5) a:hover, ul > li:nth-child(6) a:hover{
+.header_btn ul>li:nth-child(5) a:hover,
+ul>li:nth-child(6) a:hover {
     border: none;
 }
 
-            /*! Introduction Section  */
+                    /*! Introduction Section  */
 
 .intro {
     display: flex;
@@ -148,11 +148,11 @@ button.booking_btn i {
     -o-transition: 1s;
 }
 
-button.booking_btn:hover i{
+button.booking_btn:hover i {
     margin-left: 10%;
 }
 
-            /*! Partners  */
+                                /*! Partners  */
 .companies {
     margin-left: 8%;
     margin-right: 8%;
@@ -176,12 +176,13 @@ button.booking_btn:hover i{
     padding-top: 2%;
     padding-bottom: 2%;
 }
-.company_logos img{
+
+.company_logos img {
     margin-right: 2%;
 }
 
 
-        /*! Product Section  */
+                                /*! Product Section  */
 
 .products_section {
     margin: 1% 8%;
@@ -216,8 +217,7 @@ button.booking_btn:hover i{
     font-family: 'Dosis', sans-serif;
 }
 
-
-.all_products h2, h3, h4, h5{
+.all_products h2, h3, h4, h5 {
     padding: 5px;
 }
 
@@ -236,7 +236,6 @@ button.booking_btn:hover i{
 .all_products h4 {
     color: #F5A551;
 }
-
 
 .all_products .cart_btn {
     border: none;
@@ -266,7 +265,7 @@ button.booking_btn:hover i{
     justify-content: center;
 }
 
-.products_section .pages > a {
+.products_section .pages>a {
     border: 2px solid;
     text-decoration: none;
     margin-left: 1%;
@@ -285,12 +284,12 @@ button.booking_btn:hover i{
     -o-transition: .5s;
 }
 
-.products_section .pages > a:hover {
+.products_section .pages>a:hover {
     background-color: #FF6969;
     color: white;
 }
 
- /*! New Year Sale Section */
+                        /*! New Year Sale Section */
 
 .new_yr_sale {
     display: flex;
@@ -298,7 +297,6 @@ button.booking_btn:hover i{
     background-color: rgba(255, 0, 0, 0.589);
     box-sizing: border-box;
 }
-
 
 .sale_img img {
     height: 500px;
@@ -319,7 +317,7 @@ button.booking_btn:hover i{
     justify-content: center;
 }
 
-.sale_content > button.sale_btn {
+.sale_content>button.sale_btn {
     border: none;
     padding: 1%;
     height: 50px;
@@ -339,13 +337,13 @@ button.booking_btn:hover i{
     -o-transition: .5s;
 }
 
-.sale_content > button.sale_btn:hover {
+.sale_content>button.sale_btn:hover {
     border: none;
     background-color: rgb(224, 49, 49);
     color: white;
 }
 
-/*! footer part  */
+                            /*! Footer part  */
 
 footer {
     padding-top: 1%;
@@ -395,4 +393,3 @@ footer .footer_content {
 .links .link i:hover {
     color: #FF6969;
 }
-
