@@ -5,6 +5,191 @@
     padding: 0;
 }
 
+                        /*! Responsive Codes  */
+@media screen and (max-width: 480px) {
+
+    header.main {
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        border-top: 3px solid lightgreen;
+        border-bottom: 3px solid lightgreen;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+}
+    header > .logo_div {
+        display: flex;
+        justify-content: center;
+    }
+
+    header > .logo_div > lord-icon, .header_btn{
+        display: none;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    section.intro {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .intro p {
+        text-align: justify;
+    }
+
+    .intro .right_img {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .intro .right_img img{
+        height: 90%;
+        width: 90%;
+    }
+
+    .companies .company_logos {
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 5px;
+        row-gap: 5px;
+        justify-content: center;
+    }
+
+    .companies .company_logos img {
+        height: 15%;
+        width: 15%;
+    }
+
+    .product_container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .new_yr_sale {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .sale_content > button.sale_btn {
+        margin: auto;
+    }
+
+    .new_yr_sale .sale_content h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .new_yr_sale .sale_img img {
+        height: 300px;
+        width: 300px;
+        padding-top: 5px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px){
+    header.main {
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        border-top: 3px solid lightgreen;
+        border-bottom: 3px solid lightgreen;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+}
+    header > .logo_div {
+        display: flex;
+        justify-content: center;
+    }
+
+    header > .logo_div > lord-icon, .header_btn{
+        display: none;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    section.intro {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .intro p {
+        text-align: justify;
+    }
+
+    .intro .right_img {
+        margin-top: 20px;
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .intro .right_img img{
+        height: 50%;
+        width: 50%;
+    }
+
+    .companies .company_logos {
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 5px;
+        row-gap: 5px;
+        justify-content: center;
+    }
+
+    .companies .company_logos img {
+        height: 15%;
+        width: 15%;
+    }
+
+    .product_container {
+        flex-direction: row;
+    }
+
+    .product_container .all_products {
+        width: 200px;
+    }
+
+    .new_yr_sale {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .sale_content > button.sale_btn {
+        margin: auto;
+    }
+
+    .new_yr_sale .sale_content h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .new_yr_sale .sale_img img {
+        height: 300px;
+        width: 300px;
+        padding-top: 5px;
+    }
+}
+
 button {
     font-family: 'Roboto', sans-serif;
 }
@@ -19,7 +204,6 @@ body {
 }
 
                         /*! header section  */
-
 header {
     display: flex;
     justify-content: space-between;
@@ -88,8 +272,7 @@ header .logo_div h1 {
     border-bottom: 3px solid lightgreen;
 }
 
-.header_btn ul>li:nth-child(5) a:hover,
-ul>li:nth-child(6) a:hover {
+.header_btn ul>li:nth-child(5) a:hover, ul>li:nth-child(6) a:hover {
     border: none;
 }
 
@@ -115,15 +298,20 @@ button.booking_btn {
     border: none;
     padding: 10px;
     padding-left: 16px;
-    width: 140px;
+    width: 160px;
     border-radius: 10px;
     text-align: left;
     background-color: #E02C6D;
     cursor: pointer;
     color: ghostwhite;
+    transition: .5s;
     font-family: 'Poppins', sans-serif;
     animation: bg-animation 3s ease-in .3s infinite alternate-reverse;
     -webkit-animation: bg-animation 3s ease-in .3s infinite alternate-reverse;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 
 @keyframes bg-animation {
@@ -140,12 +328,17 @@ button.booking_btn {
     }
 }
 
+button.booking_btn:hover {
+    font-weight: bolder;
+    color: black;
+}
+
 button.booking_btn i {
-    transition: 1s;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 
 button.booking_btn:hover i {
@@ -180,7 +373,6 @@ button.booking_btn:hover i {
 .company_logos img {
     margin-right: 2%;
 }
-
 
                                 /*! Product Section  */
 
@@ -293,6 +485,8 @@ button.booking_btn:hover i {
 
 .new_yr_sale {
     display: flex;
+    flex-direction: row;
+    gap: 15%;
     justify-content: center;
     background-color: rgba(255, 0, 0, 0.589);
     box-sizing: border-box;
@@ -304,20 +498,13 @@ button.booking_btn:hover i {
     padding-top: 50px;
 }
 
-.new_yr_sale {
-    display: flex;
-    flex-direction: row;
-    gap: 15%;
-
-}
-
 .sale_content {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.sale_content>button.sale_btn {
+.sale_content > button.sale_btn {
     border: none;
     padding: 1%;
     height: 50px;
